@@ -47,7 +47,7 @@ export function sidebar() {
     
     <div class="sidebar-footer">
       <p class="copyright">
-        Copyright 2023 <a href="https://youtube.com/@codewithsadee">codewithsadee</a>
+        Copyright 2023 <a href="https://f2movies.us">f2movies.us</a>
       </p>
     
       <img src="./assets/images/tmdb-logo.svg" width="130" height="17" alt="the movie database logo">
