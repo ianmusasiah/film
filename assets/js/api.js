@@ -43,7 +43,7 @@ function filterMovies(data) {
 function containsRestrictedContent(overview) {
   const restrictedKeywords = [
     'NC-17',
-    /* "X" */,
+     "X" ,
     "Adult",
     "sex",
     'nudity',
