@@ -942,3 +942,11 @@ body {
   .backdrop-image { border-top-left-radius: var(--radius-36); }
 
 }
+
+
+
+@media (min-width: 1200px) {
+  .video-card {
+    max-width: 100%;
+  }
+}
