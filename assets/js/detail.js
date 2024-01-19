@@ -161,10 +161,11 @@ for (const { key, name } of filterVideos(videos)) {
   videoCard.classList.add("video-card");
 
   // Use the vidsrc.to URL with the video ID
-  const vidsrcUrl = `https://vidsrc.to/embed/movie/${movieId}`;/* ?autoplay=1 */
+  const vidsrcUrl = `https://vidsrc.in/embed/movie/${movieId}`;/* ?autoplay=1 */
 
   videoCard.innerHTML = `
-    <iframe width="500" height="294" src="${vidsrcUrl}" frameborder="0" allowfullscreen="1" title="${name}" class="img-cover" loading="lazy"></iframe>
+    /* <iframe width="500" height="294" src="${vidsrcUrl}" frameborder="0" allowfullscreen="1" title="${name}" class="img-cover" loading="lazy"></iframe> */
+    <iframe src="https://vidsrc.me/" referrerpolicy="origin"></iframe>
   `;
 
   movieDetail.querySelector(".slider-inner").appendChild(videoCard);
