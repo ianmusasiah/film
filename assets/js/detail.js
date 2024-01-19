@@ -165,8 +165,9 @@ for (const { key, name } of filterVideos(videos)) {
 
   videoCard.innerHTML = `
     <iframe width="500" height="294" src="${vidsrcUrl}" frameborder="0" allowfullscreen="1" title="${name}" class="img-cover" loading="lazy"></iframe>
-    <iframe src="https://vidsrc.me/" referrerpolicy="origin"></iframe>
+    
   `;
+  /* <iframe src="https://vidsrc.me/" referrerpolicy="origin"></iframe> */
 
   movieDetail.querySelector(".slider-inner").appendChild(videoCard);
 }
