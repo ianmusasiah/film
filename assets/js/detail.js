@@ -163,8 +163,9 @@ for (const { key, name } of filterVideos(videos)) {
   // Use the vidsrc.to URL with the video ID
   const vidsrcUrl = `https://vidsrc.in/embed/movie/${movieId}`;/* ?autoplay=1 */
 
+  /* <iframe width="500" height="294" src="${vidsrcUrl}" frameborder="0" allowfullscreen="1" title="${name}" class="img-cover" loading="lazy"></iframe>  */
   videoCard.innerHTML = `
-    /* <iframe width="500" height="294" src="${vidsrcUrl}" frameborder="0" allowfullscreen="1" title="${name}" class="img-cover" loading="lazy"></iframe> */
+  
     <iframe src="https://vidsrc.me/" referrerpolicy="origin"></iframe>
   `;
 
