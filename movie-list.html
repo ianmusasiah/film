@@ -3416,6 +3416,23 @@
     });
 </script>
 
+  <!-- 
+    - cpa grip
+  -->
+<script type="text/javascript">
+		$(function() {
+			$.getJSON("https://www.cpagrip.com/common/offer_feed_json.php?user_id=1583581&pubkey=f57ce8ea7e5f1a6acb8df0f010b63870",
+			function(json_data){
+				var offer_text = '';
+				$.each(json_data.offers, function(key, offer){
+					//lets use a custom tracking domain for the links :)
+					offer.offerlink = offer.offerlink.replace('www.cpagrip.com','motifiles.com');
+					offer_text += '<a href="'+offer.offerlink+'" target="_blank" class="offer_item">'+offer.title+'</a><br/>';
+				});
+				$(".offer_holder").html(offer_text);
+			});
+		});
+	</script>
 </body>
 
 </html>
