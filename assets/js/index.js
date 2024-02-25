@@ -62,7 +62,50 @@ fetchDataFromServer(`https://api.themoviedb.org/3/genre/movie/list?api_key=${api
     genreList[id] = name;
   }
 
-  fetchDataFromServer(`https://api.themoviedb.org/3/movie/popular?api_key=${api_key}&page=1`, heroBanner);
+  /* fetchDataFromServer(
+    `https://api.themoviedb.org/3/movie/popular?api_key=${api_key}&page=1`,
+    heroBanner
+  ); */
+
+  /* START */
+  /**
+ * Fetch data for hero banner section
+ */
+function fetchDataForHeroBanner() {
+  // Get the current day of the week (0 for Sunday, 1 for Monday, ..., 6 for Saturday)
+  const currentDay = new Date().getDay();
+
+  // Define the schedule for each day
+  const schedule = {
+    1: [1, 2, 7, 2], // Monday
+    2: [6, 4, 1, 3], // Tuesday
+    3: [1, 6, 2],    // Wednesday
+    4: [4, 5, 6],    // Thursday
+    5: [3, 7, 2, 4], // Friday
+    6: [2, 1, 3],    // Saturday
+    0: [7, 6, 5]     // Sunday
+  };
+
+  // Get the schedule for the current day
+  const currentSchedule = schedule[currentDay];
+
+  // Determine the page number for hero banner based on the current day's schedule
+  const pageNumber = currentSchedule[0] || 1; // Use page 1 if no schedule is defined
+
+  // Fetch data for hero banner using the determined page number
+  fetchDataFromServer(
+    `https://api.themoviedb.org/3/movie/popular?api_key=${api_key}&page=${pageNumber}`,
+    heroBanner
+  );
+}
+
+// Call fetchDataForHeroBanner initially
+fetchDataForHeroBanner();
+
+// Call fetchDataForHeroBanner every 7 days (to cover a complete week)
+setInterval(fetchDataForHeroBanner, 7 * 24 * 60 * 60 * 1000);
+
+  /* END */
 });
 
 
