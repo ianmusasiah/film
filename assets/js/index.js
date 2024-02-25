@@ -174,6 +174,8 @@ const addHeroSlide = function () {
   lastSliderControl.classList.add("active");
 
   const sliderStart = function () {
+    const controlIndex = Number(this.getAttribute("slider-control"));
+    if (currentSliderIndex !== controlIndex) {
     lastSliderItem.classList.remove("active");
     lastSliderControl.classList.remove("active");
 
@@ -183,7 +185,17 @@ const addHeroSlide = function () {
 
     lastSliderItem = sliderItems[Number(this.getAttribute("slider-control"))];
     lastSliderControl = this;
-  }
+    currentSliderIndex = controlIndex;
+    }
+  };
+
+  const slideToNext = function () {
+    const nextIndex = (currentSliderIndex + 1) % sliderItems.length;
+    sliderControls[nextIndex].click();
+  };
+  
+  // Automatic sliding every 5 seconds
+  setInterval(slideToNext, 5000);
 
   addEventOnElements(sliderControls, "click", sliderStart);
 
