@@ -169,6 +169,7 @@ const addHeroSlide = function () {
 
   let lastSliderItem = sliderItems[0];
   let lastSliderControl = sliderControls[0];
+  let currentSliderIndex = 0;
 
   lastSliderItem.classList.add("active");
   lastSliderControl.classList.add("active");
