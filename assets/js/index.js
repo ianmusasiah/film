@@ -185,7 +185,7 @@ function fetchDataForDay() {
         createMovieList,
         title
       );
-    }, index * 5000); // Add a delay between each fetch (5000 milliseconds = 5 seconds)
+    }, index * 1); // Add a delay between each fetch (5000 milliseconds = 5 seconds)
   });
 }
 
