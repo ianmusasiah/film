@@ -24,7 +24,7 @@ fetchDataFromServer(`https://api.themoviedb.org/3/discover/movie?api_key=${api_k
 
   totalPages = total_pages;
 
-  document.title = `${genreName} Movies - Tvflix`;
+  document.title = `${genreName} Movies - F2movies.us`;
 
   const movieListElem = document.createElement("section");
   movieListElem.classList.add("movie-list", "genre-list");
