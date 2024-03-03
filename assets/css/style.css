@@ -14,7 +14,7 @@
   #CUSTOM PROPERTY
 \*-----------------------------------*/
 
-/* :root {
+ :root {
 
   /**
    * COLORS
@@ -79,58 +79,7 @@
   --transition-short: 250ms ease;
   --transition-long: 500ms ease;
 
-} */
-
-:root {
-  /* Colors */
-  --background: hsla(220, 17%, 95%, 1); /* Light gray */
-  --banner-background: hsla(250, 6%, 80%, 1); /* Lighter gray for banner */
-  --white-alpha-20: hsla(0, 0%, 100%, 0.2);
-  --on-background: hsla(220, 100%, 10%, 1); /* Dark gray for text on light background */
-  --on-surface: hsla(250, 100%, 10%, 1); /* Dark gray for text on surfaces */
-  --on-surface-variant: hsla(250, 1%, 44%, 1);
-  --primary: hsla(200, 80%, 50%, 1); /* Blue as primary color */
-  --primary-variant: hsla(200, 80%, 60%, 1); /* Lighter shade of blue */
-  --rating-color: hsla(44, 100%, 49%, 1); /* Retained for rating color */
-  --surface: hsla(250, 13%, 90%, 1); /* Very light gray for surfaces */
-  --text-color: hsla(220, 17%, 20%, 1); /* Dark gray for text */
-  --white: hsla(0, 0%, 100%, 1); /* White */
-
-  /* Gradient Colors */
-  --banner-overlay: 90deg, hsl(220, 17%, 95%) 0%, hsla(220, 17%, 95%, 0.5) 100%; /* Light gray gradient for banner overlay */
-  --bottom-overlay: 180deg, hsla(250, 13%, 90%, 0), hsla(250, 13%, 90%, 1); /* Light gray gradient for bottom overlay */
-
-  /* Typography */
-
-  /* font-family */
-  --ff-dm-sans: "DM Sans", sans-serif;
-
-  /* font Size */
-  --fs-heading: 4rem;
-  --fs-title-lg: 2.6rem;
-  --fs-title: 2rem;
-  --fs-body: 1.8rem;
-  --fs-button: 1.5rem;
-  --fs-label: 1.4rem;
-
-  /* font-weight */
-  --weight-bold: 700;
-
-  /* Shadows */
-  --shadow-1: 0 1px 4px hsla(0, 0%, 0%, 0.1); /* Very light shadow */
-  --shadow-2: 0 2px 4px hsla(0, 0%, 0%, 0.2); /* Light shadow */
-
-  /* Border Radius */
-  --radius-4: 4px;
-  --radius-8: 8px;
-  --radius-16: 16px;
-  --radius-24: 24px;
-  --radius-36: 36px;
-
-  /* Transition */
-  --transition-short: 250ms ease;
-  --transition-long: 500ms ease;
-}
+} 
 
 
 
