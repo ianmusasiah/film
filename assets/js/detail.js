@@ -138,6 +138,20 @@ fetchDataFromServer(`https://api.themoviedb.org/3/movie/${movieId}?api_key=${api
     </div>
   `;
 
+   // Find the slider-list element
+const sliderList = movieDetail.querySelector(".slider-list");
+
+// Create the download button element
+const downloadBtn = document.createElement("a");
+downloadBtn.classList.add("download-btn");
+downloadBtn.href = "https://getafilenow.com/1679641"; // Set the URL
+downloadBtn.target = "_blank"; // Open the link in a new tab
+downloadBtn.textContent = "Download"; // Set the button text
+
+// Append the download button to the slider-list element
+sliderList.appendChild(downloadBtn);
+
+
  /*  for (const { key, name } of filterVideos(videos)) {
     const videoCard = document.createElement("div");
     videoCard.classList.add("video-card");
