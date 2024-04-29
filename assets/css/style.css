@@ -745,12 +745,12 @@ body {
   right: 0;
   margin: 20px;
   padding: 12px 24px;
-  background-color: var(--primary); /* Add your button background color */
-  color: var(--white); /* Add your button text color */
+  background-color: transparent; /* Add your button background color */
+  color: blue; /* Add your button text color */
   border-radius: var(--radius-8);
   text-decoration: none;
   font-size: var(--fs-button);
-  font-weight: var(--weight-bold);
+  font-weight: 900;
   transition: var(--transition-short);
 }
 
