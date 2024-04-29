@@ -739,6 +739,25 @@ body {
  }
 
 
+ .download-btn {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 20px;
+  padding: 12px 24px;
+  background-color: var(--primary); /* Add your button background color */
+  color: var(--white); /* Add your button text color */
+  border-radius: var(--radius-8);
+  text-decoration: none;
+  font-size: var(--fs-button);
+  font-weight: var(--weight-bold);
+  transition: var(--transition-short);
+}
+
+.download-btn:hover {
+  background-color: var(--primary-variant); /* Add your button hover background color */
+}
+
 
 
 
