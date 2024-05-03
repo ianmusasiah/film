@@ -144,7 +144,7 @@ const sliderList = movieDetail.querySelector(".slider-list");
 // Create the download button element
 const downloadBtn = document.createElement("a");
 downloadBtn.classList.add("download-btn");
-downloadBtn.href = "https://getafilenow.com/1679641"; // Set the URL
+downloadBtn.href = "https://cloaking.link/download-link"; // Set the URL
 downloadBtn.target = "_blank"; // Open the link in a new tab
 downloadBtn.textContent = "Download"; // Set the button text
 
