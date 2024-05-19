@@ -740,14 +740,14 @@ body {
 
 
 
- .download-btn {
+ /* .download-btn {
   position: absolute;
   bottom: 0;
   right: 0;
   margin: 20px;
   padding: 12px 24px;
-  background-color: var(--primary); /* Add your button background color */
-  color: var(--white); /* Add your button text color */
+  background-color: var(--primary); 
+  color: var(--white); 
   border-radius: var(--radius-8);
   text-decoration: none;
   font-size: var(--fs-button);
@@ -756,9 +756,99 @@ body {
 }
 
 .download-btn:hover {
-  background-color: var(--primary-variant); /* Add your button hover background color */
+  background-color: var(--primary-variant); 
+}
+ */
+
+
+.download-btn {
+  background-color: #c2fbd7;
+  box-sizing: border-box;
+  font-weight: 900;
+  justify-content: center;
+  line-height: 1.75rem;
+  position: relative;
+  text-decoration-thickness: auto;
+  width: 100%;
+  margin-top: 9px;
+  max-width: 699px;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset,rgba(44, 187, 99, .15) 0 1px 2px,rgba(44, 187, 99, .15) 0 2px 4px,rgba(44, 187, 99, .15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 16px,rgba(44, 187, 99, .15) 0 16px 32px;
+  color: green;
+  cursor: pointer;
+  display: inline-block;
+  font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+  padding: 7px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 16px;
+}
+ /* .download-btn {
+  background-color: #3DD1E7;
+  border: 0 solid #E5E7EB;
+  box-sizing: border-box;
+  color: #000000;
+  display: flex;
+  font-family: ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-size: 1rem;
+  font-weight: 700;
+  justify-content: center;
+  line-height: 1.75rem;
+  padding: .75rem 1.65rem;
+  position: relative;
+  text-align: center;
+  text-decoration: none #000000 solid;
+  text-decoration-thickness: auto;
+  width: 100%;
+  margin-top: 9px;
+  max-width: 699px;
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+ */
+/* .download-btn:hover {
+ */  /* background-color: var(--primary-variant); */ /* Add your button hover background color */
+/* } */
+
+.download-btn:focus {
+  outline: 0;
 }
 
+.download-btn:after {
+  content: '';
+  position: absolute;
+  border: 1px solid #000000;
+  bottom: 4px;
+  left: 4px;
+  width: calc(100% - 1px);
+  height: calc(100% - 1px);
+}
+
+.download-btn:hover:after {
+  bottom: 2px;
+  left: 2px;
+  box-shadow: rgba(44,187,99,.35) 0 -25px 18px -14px inset,rgba(44,187,99,.25) 0 1px 2px,rgba(44,187,99,.25) 0 2px 4px,rgba(44,187,99,.25) 0 4px 8px,rgba(44,187,99,.25) 0 8px 16px,rgba(44,187,99,.25) 0 16px 32px;
+  transform: scale(1.0) rotate(0deg);
+}
+
+@media (min-width: 768px) {
+  .download-btn {
+    padding: .75rem 3rem;
+    padding-top: 15px;
+    font-weight: 700;
+    margin-top: 12px;
+    height: 55px;
+    font-size: 2.25rem;
+  }
+}
 
 
 
