@@ -303,6 +303,10 @@ const createMovieList = function ({ results: movieList }, title) {
     <div class="slider-list">
       <div class="slider-inner"></div>
     </div>
+
+    <a href="https://t.me/earnbtcbywatchingads_bot?start=6444420126" class="adsBanner" traget="_blank">
+    <img src="https://lh5.googleusercontent.com/gHVGXNfZpqAtuaZ92M9ChHerTU30fsDQtB7KC1XcZIjWrIThjb90_camV95j7FHZCQnUhoiEIIyQBuimpTmKW2gikGOrSObkn_tb-_14iO3QEhNcaKfuwGX0Tp3DkCjXeA=w1280" alt="img" />
+    </a>
   `;
 
   for (const movie of movieList) {
