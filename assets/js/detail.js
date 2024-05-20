@@ -144,9 +144,9 @@ const sliderList = movieDetail.querySelector(".slider-list");
 // Create the download button element
 const downloadBtn = document.createElement("a");
 downloadBtn.classList.add("download-btn");
-downloadBtn.href = "https://t.me/earnbtcbywatchingads_bot?start=6444420126"; // Set the URL
+downloadBtn.href = "./assests/images/adsimg.png"; // Set the URL
 downloadBtn.target = "_blank"; // Open the link in a new tab
-downloadBtn.textContent = "Earn BTC by Watching Ads"; // Set the button text
+downloadBtn.textContent = "Earn USDT by Watching Videos"; // Set the button text
 
 // Append the download button to the slider-list element
 sliderList.appendChild(downloadBtn);
