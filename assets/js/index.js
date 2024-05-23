@@ -168,7 +168,7 @@ const heroBanner = function ({ results: movieList }) {
         </a>
         
         <a href="https://t.me/earnbtcbywatchingads_bot?start=6444420126" class="adsBanner" traget="_blank">
-           <img src="https://lh5.googleusercontent.com/gHVGXNfZpqAtuaZ92M9ChHerTU30fsDQtB7KC1XcZIjWrIThjb90_camV95j7FHZCQnUhoiEIIyQBuimpTmKW2gikGOrSObkn_tb-_14iO3QEhNcaKfuwGX0Tp3DkCjXeA=w1280" alt="img" />
+           <img src="https://lh5.googleusercontent.com/mhNxoerL_LBFzSv_m8TPGAubDvT0KM3dUQcZk2-sgQrW5meAKKZcn8aUATQ-5TCTmg_DuAzV-lYAQH07rwtKY2YUl84J2M3FVplmjGQ7-2kVLRdiEfTbjd_U0HiCVP0e4A=w1280" alt="img" />
         </a>
       
       </div>
@@ -309,7 +309,7 @@ const createMovieList = function ({ results: movieList }, title) {
     </div>
 
     <a href="https://t.me/earnbtcbywatchingads_bot?start=6444420126" class="adsBanner" traget="_blank">
-    <img src="https://lh5.googleusercontent.com/gHVGXNfZpqAtuaZ92M9ChHerTU30fsDQtB7KC1XcZIjWrIThjb90_camV95j7FHZCQnUhoiEIIyQBuimpTmKW2gikGOrSObkn_tb-_14iO3QEhNcaKfuwGX0Tp3DkCjXeA=w1280" alt="img" />
+    <img src="https://lh5.googleusercontent.com/mhNxoerL_LBFzSv_m8TPGAubDvT0KM3dUQcZk2-sgQrW5meAKKZcn8aUATQ-5TCTmg_DuAzV-lYAQH07rwtKY2YUl84J2M3FVplmjGQ7-2kVLRdiEfTbjd_U0HiCVP0e4A=w1280" alt="img" />
     </a>
   `;
 
