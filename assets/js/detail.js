@@ -144,9 +144,9 @@ const sliderList = movieDetail.querySelector(".slider-list");
 // Create the download button element
 const downloadBtn = document.createElement("a");
 downloadBtn.classList.add("download-btn");
-downloadBtn.href = "https://t.me/piggybankgamebot/app?startapp=ref_003ec9a3"; // Set the URL
+downloadBtn.href = "https://t.me/CoinHuntersGameBot/app?startapp=hunter_655800f3bb53e24e55063483187b8b7d"; // Set the URL
 downloadBtn.target = "_blank"; // Open the link in a new tab
-downloadBtn.textContent = "Earn USDT by Watching Videos"; // Set the button text
+downloadBtn.textContent = "Earn USDT by Playing Games"; // Set the button text
 
 // Append the download button to the slider-list element
 sliderList.appendChild(downloadBtn);
